@@ -1,0 +1,74 @@
+\documentclass{beamer}
+\usetheme{CambridgeUS}
+
+\title{EE5600 Project Presentation}
+\author{Ashish Jangid}
+\institute{IIT Hyderabad}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\section{Section 1}
+\subsection{sub a}
+
+\begin{frame}
+\frametitle{Problem statement}
+
+This is a short project on Speech Command Recognition.
+Here you have to generate data using your own recorded commands "Forward","Back","Left","Right","Stop". Set the sampling rate of the recorded voice commands at 16 KHz and generate total 80 utterances of each command.Trim the samples to 1 second.
+You can use any architecture to recognize the speech commands, you have to fix the hyper-parameters so that the accuracy can be increased. Summarize the model architecture as well as the hyper-parameters.
+Use 25\% of samples for testing and rest for training the model.
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Mechanism Involved}
+
+
+\begin{enumerate}
+ \item Generating data using appropriate voice recording software
+  \item Adding this data to a particular path in drive
+  \item Loading the data into Colab and Importing required libraries
+  \item Splitting data into Train and Test
+  \item Checking Model Summary
+  \item Fitting the model on to the training and validation data using model.fit()
+  \item Calculating acccuracy of the model
+  \item Comparing different plots(Accuracy vs Epochs) obtained by changing hyperparameters
+\end{enumerate}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Results}
+\tableofcontents
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Conclusion}
+
+\begin{enumerate}
+ 
+ \item Accuracy of the model can be increased by changing the hyperparameters such as:
+ 
+ \begin{itemize}
+    \item Number of layers and number of neurons in each layer
+    \item Activation functions
+    \item Batch size
+    \item Number of epochs, etc.
+    
+    \end{itemize}
+    
+    \item Training loss is decreasing but the val loss is fluctuating.
+ 
+\end{enumerate}
+
+\end{frame}
+
+\end{document}
